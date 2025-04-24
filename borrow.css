@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background: burlywood;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.status-returned {
+    color: green;
+    font-weight: bold;
+}
+
+.status-borrowed {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-overdue {
+    color: red;
+    font-weight: bold;
+}
