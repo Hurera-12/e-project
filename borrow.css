@@ -1,47 +1,80 @@
+/* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
-    padding: 40px;
-    background: burlywood;
-}
-
-h1 {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(247, 224, 194);
+    padding: 20px;
+  }
+  
+  /* Heading Styling */
+  h1 {
     text-align: center;
-    color: #333;
-}
-
-table {
-    width: 95%;
-    margin: auto;
-    border-collapse: collapse;
-    background: white;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 12px 15px;
-    text-align: center;
-}
-
-th {
-    background-color: #007bff;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.status-returned {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Table Styling */
+  .table {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: bisque;
+  }
+  
+  .table th {
+    background-color: rgb(253, 240, 223);
+    color: bisque;
+    font-weight: bold;
+  }
+  
+  .table td {
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  
+  /* Status Column Colors */
+  .status-returned {
     color: green;
     font-weight: bold;
-}
-
-.status-borrowed {
-    color: orange;
-    font-weight: bold;
-}
-
-.status-overdue {
+  }
+  
+  .status-overdue {
     color: red;
     font-weight: bold;
-}
+  }
+  
+  .status-pending {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  /* Button Styling (Bootstrap’s btn-success can be customized) */
+  a.btn-success {
+    font-size: 14px;
+    padding: 5px 12px;
+    border-radius: 5px;
+  }
+  
+  a.btn-success:hover {
+    background-color: burlywood;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Make the "No records" message center aligned and styled */
+  .text-center {
+    font-size: 16px;
+    color: burlywood;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+  
+  /* Add a small shadow to the table rows for better visual effect */
+  .table tr {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .table tr:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
