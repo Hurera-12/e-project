@@ -45,6 +45,7 @@
                         <td class='status-{$statusClass}'>" . htmlspecialchars($row['status']) . "</td>
                         <td>{$row['fine']}</td>
                         <td><a class='btn btn-success' href='borrowupdate.php?user_id=" . $row['user_id'] . "'>Update</a></td>
+                        td><a class='btn btn-danger' href='borrowdelete.php?user_id=" . $row['user_id'] . "'>delete</a></td>
                       </tr>";
             }
         } else {
