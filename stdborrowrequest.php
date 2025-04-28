@@ -13,6 +13,8 @@ $conn=new mysqli($servername,$username,$password,$db);
   <meta charset="UTF-8">
   <title>Request a Book</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="stdborrowrequest.css">
 </head>
 <body>
   <div class="container mt-5">
@@ -30,7 +32,7 @@ $conn=new mysqli($servername,$username,$password,$db);
         <label for="book_title" class="form-label">Book Title</label>
         <input type="text" class="form-control" id="book_title" name="book_title" required>
       </div>
-      <button type="submit" class="btn btn-primary">Submit Request</button>
+      <button type="submit" class="btn btn-success">Submit Request</button>
     </form>
   </div>
 </body>
