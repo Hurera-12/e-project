@@ -20,20 +20,25 @@ $conn=new mysqli($servername,$username,$password,$db);
   <div class="container mt-5">
     <h2>Student Borrow Request</h2>
     <form action="submit_borrow_request.php" method="POST">
-      <div class="mb-3">
-        <label for="user_id" class="form-label">Student ID</label>
-        <input type="number" class="form-control" id="user_id" name="user_id" required>
-      </div>
-      <div class="mb-3">
-        <label for="user_name" class="form-label">Student Name</label>
-        <input type="text" class="form-control" id="user_name" name="user_name" required>
-      </div>
-      <div class="mb-3">
-        <label for="book_title" class="form-label">Book Title</label>
-        <input type="text" class="form-control" id="book_title" name="book_title" required>
-      </div>
-      <button type="submit" class="btn btn-success">Submit Request</button>
-    </form>
+  <div>
+    <label>Student ID:</label>
+    <input type="number" name="user_id" required>
+  </div>
+  <br>
+  <div>
+    <label>Student Name:</label>
+    <input type="text" name="user_name" required>
+  </div>
+  <br>
+  <div>
+    <label>Book Title:</label>
+    <input type="text" name="book_title" required>
+  </div>
+  <br>
+  <button type="submit">Submit Request</button>
+</form>
+
   </div>
 </body>
 </html>
+
