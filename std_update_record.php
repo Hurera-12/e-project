@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_id'])) {
     <title>Update Book</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: burlywood;">
 <div class="container mt-5">
     <h2>Update Borrowed Book</h2>
     <form method="POST">
