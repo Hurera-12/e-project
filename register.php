@@ -1,7 +1,7 @@
 <?php
-// Show errors (for debugging)
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// // Show errors (for debugging)
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 // Database connection
 $conn = new mysqli("localhost", "root", "", "login_register");
