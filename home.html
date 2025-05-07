@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: burlywood;
+        }
+
+        header, footer {
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(235, 166, 76);
+    color: white;
+    padding: 20px 30px; /* Add more padding on the left and right */
+}
+
+        
+       
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            padding: 40px;
+            background-color: #f4f4f4;
+            text-align: center;
+            background-color: burlywood;
+        }
+
+        .main-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Book Card Styling */
+        .book-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+.book-card {
+    background-color: rgb(230, 210, 184);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-top: 15px;
+    max-width: 2500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.book-card h2 {
+    margin: 15px 0 10px;
+    font-size: 22px;
+}
+
+.book-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.borrow-btn {
+    background-color: rgb(237, 164, 74);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.borrow-btn:hover {
+    background-color: #45a049;
+}
+
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>LIBRARY BOOK FLOW</h1>
+        
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            
+            <a href="contact.html">Contact Us</a>
+
+            <a href="register.php">Register</a>
+            <a href="login.php">Login</a>
+            
+               
+          
+            
+            
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome to Our Library</h1>
+        <p>Manage books, members, and transactions efficiently with our Library Management System.</p>
+    </div>
+
+
+    <!-- Book Card Section -->
+    <div class="book-grid">
+    <div class="book-card">
+        <img src="book1.webp" alt="Novel Cover">
+        <h2>HIS & HER</h2>
+        <p>Author: ALICE FEENEY</p>
+        <button class="borrow-btn">Borrow</button>
+    </div>
+
+
+
+
+<div class="book-card">
+    <img src="book2.jpg" alt="Novel Cover">
+    <h2>THE CRUEL PRINCE</h2>
+    <p>Author: HOLLY BLACK</p>
+    <button class="borrow-btn">Borrow</button>
+</div>
+
+
+
+
+<div class="book-card">
+    <img src="book3.webp" alt="Novel Cover">
+    <h2>ICE BREAKER</h2>
+    <p>Author: HANNAH GRACE</p>
+    <button class="borrow-btn">Borrow</button>
+</div>
+
+
+
+<div class="book-card">
+    <img src="book4.jpg" alt="Novel Cover">
+    <h2>THE CHEAT SHEET</h2>
+    <p>Author: SARAH ADAMS</p>
+    <button class="borrow-btn">Borrow</button>
+</div>
+
+
+
+
+<div class="book-card">
+    <img src="book5.jpg" alt="Novel Cover">
+    <h2>BETTER THAN THE MOVIES</h2>
+    <p>Author: LYNN PAINTER</p>
+    <button class="borrow-btn">Borrow</button>
+</div>
+
+
+<div class="book-card">
+    <img src="powerless.jpg" alt="Novel Cover">
+    <h2>POWERLESS</h2>
+    <p>Author: LAUREN ROBERT</p>
+    <button class="borrow-btn">Borrow</button>
+</div>
+
+<div class="book-card">
+    <img src="SILENT.webp" alt="Novel Cover">
+    <h2>THE SILENT PATIENT</h2>
+    <p>Author: ALEX MICHAELIDES</p>
+    <button class="borrow-btn">Borrow</button>
+</div>
+
+<div class="book-card">
+    <img src="book1.webp" alt="Novel Cover">
+    <h2>FOURTH WING</h2>
+    <p>Author: REBECCA YARROS</p>
+    <button class="borrow-btn">Borrow</button>
+</div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Library Management System</p>
+        <p>Contact: info@librarybookflow.com</p>
+    </footer>
+
+</body>
+</html>
