@@ -1,55 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Library</title>
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Library Book Flow</title>
+  <style>
+    /* Make the layout fill full height */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: burlywood;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header & Footer shared styles */
+    header, footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(235, 166, 76);
+      color: white;
+      padding: 20px 30px;
+      /* flex-wrap: wrap; */
+    }
+
+    header h1, footer p {
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content grows to push footer down */
+    main {
+      flex: 1;
+      padding: 40px 20px;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-form,
+    .map-container {
+      flex: 1 1 48%;
+      background-color: #fff8ee;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h2,
+    .map-container h2 {
+      margin-bottom: 15px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+    }
+
+    .contact-form button {
+      margin-top: 15px;
+      padding: 12px 20px;
+      background-color: #e2993b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: green;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    footer {
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
-    <!-- <header>
-        <h1>Library Management System</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">Members</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header> -->
 
-    <main>
-        <section class="contact-container">
-            <div class="contact-form">
-                <h2>Contact Us</h2>
-                <p>Feel free to reach out for any queries or feedback.</p>
-                <form action="#" method="post">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" required>
-    
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-    
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-    
-            <div class="map-container">
-                <h2>Our Location</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019138049011!2d-122.4206796846808!3d37.779280379758115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808cbf32f1fb%3A0xa48f8b4d909ba7bd!2sSan%20Francisco%20Public%20Library!5e0!3m2!1sen!2sus!4v1617047614511!5m2!1sen!2sus"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>
-    </main>
-    
+  <!-- Header -->
+  <header>
+    <h1>LIBRARY BOOK FLOW</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="#">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="register.php">Register</a>
+      <a href="login.php">Login</a>
+    </nav>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 Library Management System. All rights reserved.</p>
-    </footer>
+  <!-- Main Content -->
+  <main>
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Google Map -->
+      <div class="map-container">
+        <h2>Our Location</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.4250072168646!2d67.12986711425358!3d24.921861384031196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU1JzE4LjciTiA2N8KwMDcnNDcuNSJF!5e0!3m2!1sen!2s!4v1600000000000"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Library Management System</p>
+    <p>Contact: info@librarybookflow.com</p>
+  </footer>
+
 </body>
 </html>
